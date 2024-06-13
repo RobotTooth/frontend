@@ -1,11 +1,12 @@
 import "./App.css";
-import Navbar from "./Context/Navbar/Navbar";
-import { BrowserRouter, Routes, Router, Route } from "react-router-dom";
+import Navbar from "./Components/Navbar/Navbar";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Shop from "./Pages/Shop";
 import ShopCategory from "./Pages/ShopCategory";
 import Product from "./Pages/Product";
 import Cart from "./Pages/Cart";
 import LoginSignup from "./Pages/LoginSignup";
+import Hero from "./Components/Hero/Hero";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="/login" element={<LoginSignup />} />
         </Routes>
       </BrowserRouter>
+      <Hero />
     </div>
   );
 }
